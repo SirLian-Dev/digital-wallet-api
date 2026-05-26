@@ -1,4 +1,4 @@
-package com.tuusuario.wallet.dto;
+package com.sirlian.wallet.dto;
 
 import java.math.BigDecimal;
 import lombok.Data;

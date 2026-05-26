@@ -1,4 +1,4 @@
-package com.tuusuario.wallet.model;
+package com.sirlian.wallet.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -8,6 +8,7 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.sirlian.wallet.enums.TransactionType;
 
 @Entity
 @Table(name = "transactions")

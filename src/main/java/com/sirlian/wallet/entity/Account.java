@@ -1,5 +1,5 @@
 
-package com.tuusuario.wallet.model;
+package com.sirlian.wallet.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.tuusuario.wallet.model;
+package com.sirlian.wallet.enums;
 
 public enum TransactionType {
 	

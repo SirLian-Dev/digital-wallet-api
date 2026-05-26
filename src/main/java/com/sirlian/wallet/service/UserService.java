@@ -1,10 +1,11 @@
-package com.tuusuario.wallet.service;
-
-import com.tuusuario.wallet.model.User;
-import com.tuusuario.wallet.model.Account;
-import com.tuusuario.wallet.repository.UserRepository;
+package com.sirlian.wallet.service;
 
 import org.springframework.stereotype.Service;
+
+import com.sirlian.wallet.entity.Account;
+import com.sirlian.wallet.entity.User;
+import com.sirlian.wallet.repository.UserRepository;
+
 import java.math.BigDecimal;
 import java.util.List;
 

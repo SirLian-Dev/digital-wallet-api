@@ -1,8 +1,10 @@
-package com.tuusuario.wallet.repository;
+package com.sirlian.wallet.repository;
 
-import com.tuusuario.wallet.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
+import com.sirlian.wallet.entity.User;
+
 import java.util.Optional;
 
 @Repository

@@ -1,16 +1,16 @@
-package com.tuusuario.wallet.controller;
-
-import com.tuusuario.wallet.model.Account;
-import com.tuusuario.wallet.model.Transaction;
-import com.tuusuario.wallet.model.User;
-import com.tuusuario.wallet.service.UserService;
+package com.sirlian.wallet.controller;
 
 import jakarta.validation.Valid;
 
-import com.tuusuario.wallet.service.AccountService;
-
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import com.sirlian.wallet.entity.Account;
+import com.sirlian.wallet.entity.Transaction;
+import com.sirlian.wallet.entity.User;
+import com.sirlian.wallet.service.AccountService;
+import com.sirlian.wallet.service.UserService;
+
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;

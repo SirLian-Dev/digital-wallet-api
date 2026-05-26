@@ -1,10 +1,10 @@
-package com.tuusuario.wallet.controller;
-
-import com.tuusuario.wallet.dto.TransferRequest;
-import com.tuusuario.wallet.service.AccountService;
+package com.sirlian.wallet.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import com.sirlian.wallet.dto.TransferRequest;
+import com.sirlian.wallet.service.AccountService;
 
 @RestController
 @RequestMapping("/api/wallet")

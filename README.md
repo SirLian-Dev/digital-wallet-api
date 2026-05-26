@@ -19,7 +19,8 @@ Este proyecto es una API REST robusta para gestionar una billetera digital, desa
 ## 🚀 Instalación y Configuración
 1. Clonar el repositorio.
 2. Configurar las credenciales de PostgreSQL en `src/main/resources/application.properties`.
-3. Ejecutar `./mvnw spring-boot:run` (o desde tu IDE).
+3. Crear base de datos como `wallet_db`
+4. Ejecutar `./mvnw spring-boot:run` (o desde tu IDE).
 
 ## 📁 Estructura del Proyecto
 - `controller`: Puntos de entrada de la API.

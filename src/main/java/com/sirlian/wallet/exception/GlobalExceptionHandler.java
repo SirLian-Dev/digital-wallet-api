@@ -1,4 +1,4 @@
-package com.tuusuario.wallet.exception;
+package com.sirlian.wallet.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

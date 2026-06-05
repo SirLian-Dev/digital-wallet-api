@@ -5,6 +5,8 @@ import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import com.sirlian.wallet.dto.UserRequestDTO;
+import com.sirlian.wallet.dto.UserResponseDTO;
 import com.sirlian.wallet.entity.Account;
 import com.sirlian.wallet.entity.Transaction;
 import com.sirlian.wallet.entity.User;
@@ -28,9 +30,23 @@ public class UserController {
 	    }
 
     @PostMapping
-    public ResponseEntity<User> createUser(@Valid @RequestBody User user) {
-    	System.out.println("Recibiendo petición para crear usuario: " + user.getUsername());
-        return ResponseEntity.ok(userService.saveUser(user));
+    public ResponseEntity<UserResponseDTO> createUser(@Valid @RequestBody UserRequestDTO request) {
+    	User user = new User();
+
+    	user.setUsername(request.getUsername());
+    	user.setEmail(request.getEmail());
+    	user.setPassword(request.getPassword());
+
+    	User savedUser = userService.saveUser(user);
+
+    	UserResponseDTO response =
+    	        new UserResponseDTO(
+    	                savedUser.getId(),
+    	                savedUser.getUsername(),
+    	                savedUser.getEmail()
+    	        );
+
+    	return ResponseEntity.ok(response);
     }
 
     @GetMapping("/{id}")
